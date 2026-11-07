@@ -1,2 +1,4 @@
 pytest==9.0.3
 semgrep==1.144.0
+# semgrep 1.144.0 depends on mcp, which imports a pydantic internal removed in newer pydantic releases
+pydantic==2.11.10
