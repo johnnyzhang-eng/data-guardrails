@@ -1,0 +1,9 @@
+{
+  "baseline_total": 100,
+  "baseline_delivered": 90,
+  "current_total": 20,
+  "current_delivered": 18,
+  "baseline_complete": true,
+  "current_complete": true,
+  "threshold_pp": 5
+}

@@ -1,0 +1,17 @@
+rules:
+  - id: unguarded-json-loads-in-loop
+    languages: [python]
+    severity: WARNING
+    message: >
+      A JSON parsing error can stop this entire loop. Handle invalid input
+      explicitly, retain valid records, and record rejected line numbers.
+    patterns:
+      - pattern: json.loads(...)
+      - pattern-inside: |
+          for $LINE in $LINES:
+              ...
+      - pattern-not-inside: |
+          try:
+              ...
+          except ...:
+              ...

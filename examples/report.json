@@ -1,0 +1,4 @@
+{
+  "scope": {"start_day": "2025-01-01", "end_day": "2025-01-02", "status": "delivered"},
+  "metrics": {"order_rows": 16, "known_amount_rows": 16, "amount_sum": 697}
+}

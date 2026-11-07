@@ -1,0 +1,11 @@
+# Example only: Soda Core v3 SodaCL; not run in CI.
+# 示例，未在 CI 里运行。
+# Needs a supported connector and date/time type adaptation; see README.
+checks for orders:
+  - row_count > 0
+  - missing_count(order_id) = 0
+  - duplicate_count(order_id) = 0
+  - missing_count(amount) = 0
+  - freshness(order_time) < 2d
+  - values in (merchant_id) must exist in merchants (merchant_id)
+  - values in (user_id) must exist in users (user_id)

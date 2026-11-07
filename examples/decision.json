@@ -1,0 +1,12 @@
+{
+  "claim": "A small daily order count needs an input-completeness check.",
+  "scope": "Synthetic orders on 2025-01-07, compared with the previous three UTC days.",
+  "action": "Hold the demand conclusion and inspect the synthetic input counts.",
+  "owner": "demo learner",
+  "alternative_explanation": "A real change in demand could also reduce the count.",
+  "stop_condition": "Do not interpret demand until input completeness is independently checked.",
+  "evidence": ["L1 known answer: 4 rows versus a baseline of 20 rows."],
+  "measurement_verified": true,
+  "mechanism_compared": true,
+  "contrary_evidence_sought": true
+}
